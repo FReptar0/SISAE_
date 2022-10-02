@@ -1,3 +1,6 @@
+<?php
+include 'action/process.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,15 +22,13 @@
       <h3 id="descripcionUno">Muy buena</h3>
     </div>
 
-
-
     <div id="resultadoGeneral">
       <h3 class="text-dark">Resultado general:</h3>
       <div class="element-2">
         <div class="row">
           <div class="col" style="position: relative">
             <h5 id="respuestas">
-              <span id="numRespuestas"> 24</span> respuestas
+              <span id="numRespuestas"> <?php echo $row["RESULT"]; ?></span> respuestas
             </h5>
           </div>
           <div class="col m-0 p-0">
