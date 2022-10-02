@@ -27,8 +27,14 @@ $result = $conn->query($sql);
         <select name="nombreEncuesta" class="form-select" style="background-color: #e9ecef;" id="tituloEncuesta">
           <?php
           if ($result->num_rows > 0) {
+            $validate = 0;
             while ($row = $result->fetch_assoc()) {
-              echo "<option value='" . $row['ID_ENCUESTAS'] . "'>" . $row['NOMBRE_ENCUESTA'] . "</option>";
+              if ($validate > 0) {
+                echo "<option value='" . $row['ID_ENCUESTAS'] . "' disabled>" . $row['NOMBRE_ENCUESTA'] . "</option>";
+              } else {
+                echo "<option value='" . $row['ID_ENCUESTAS'] . "'>" . $row['NOMBRE_ENCUESTA'] . "</option>";
+                $validate += 1;
+              }
             }
           }
           ?>
