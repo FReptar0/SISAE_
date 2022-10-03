@@ -19,7 +19,7 @@ include 'action/process.php';
     <h1>Resultado:</h1>
     <div class="mb-5" id="resultado">
       <h2 id="h2Uno"><span id="porIndividual"><?php echo $promUnitario; ?></span>%</h2>
-      <h3 id="descripcionUno">Muy buena</h3>
+      <h3 id="descripcionUno"><?php echo $descripcionUno; ?></h3>
     </div>
     <div id="resultadoGeneral">
       <h3 class="text-dark">Resultado general:</h3>
@@ -32,14 +32,14 @@ include 'action/process.php';
           </div>
           <div class="col m-0 p-0">
             <h2 id="h2Dos"><span id="porGeneral"><?php echo $promGeneral; ?></span>%</h2>
-            <h3 id="descripcionDos" style="margin-top: -8%;">Excelente</h3>
+            <h3 id="descripcionDos" style="margin-top: -8%;"><?php echo $descripcionDos; ?></h3>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="boton">
-    <a href="index.php">
+    <a href="assets/invalidateSession.php">
       <button type="button" class="btn btn-secondary">Regresar</button>
     </a>
   </div>
