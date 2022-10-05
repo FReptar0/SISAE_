@@ -46,13 +46,13 @@ $result = $conn->query($sql);
           <div class="col">
             <div class="mb-3">
               <label for="usuario" class="form-label">Usuario</label>
-              <input type="text" name="nombreUsuario" class="form-control" id="usuario" placeholder="Luis Hern&aacute;ndez" aria-describedby="Nombre de usuario" autocomplete="off" />
+              <input type="text" name="nombreUsuario" class="form-control" id="usuario" placeholder="Ej. Luis Hern&aacute;ndez" aria-describedby="Nombre de usuario" autocomplete="off" />
             </div>
           </div>
           <div class="col">
             <div class="mb-3">
               <label for="empresa" class="form-label">Empresa</label>
-              <input type="text" name="nombreEmpresa" class="form-control" id="empresa" placeholder="Los Cochilocos S.A. de C.V." aria-describedby="Nombre de la empresa" autocomplete="off" />
+              <input type="text" name="nombreEmpresa" class="form-control" id="empresa" placeholder="Ej. Los Cochilocos S.A. de C.V." aria-describedby="Nombre de la empresa" autocomplete="off" />
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@ $result = $conn->query($sql);
       </div>
 
       <div class="botones">
-        <input style="margin-right: 30px" class="btn btn-danger" type="reset" value="Eliminar" />
+        <input style="margin-right: 30px" class="btn btn-danger" type="reset" value="Limpiar" />
         <input style="margin-left: 30px" class="btn btn-success" type="submit" value="Guardar" />
       </div>
     </form>

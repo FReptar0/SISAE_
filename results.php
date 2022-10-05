@@ -18,8 +18,8 @@ include 'action/process.php';
   <div class="contenedor-resultados p-3">
     <h1>Resultado:</h1>
     <div class="mb-5" id="resultado">
-      <h2 id="h2Uno" class="<?echo $claseUno; ?>"><span id="porIndividual"><?php echo $promUnitario; ?></span>%</h2>
-      <h3 id="descripcionUno" class="<?echo $claseUno; ?>"><?php echo $descripcionUno; ?></h3>
+      <h2 id="h2Uno" class="<?php echo $claseUno; ?>"><span id="porIndividual"><?php echo $promUnitario; ?></span>%</h2>
+      <h3 id="descripcionUno" class="<?php echo $claseUno; ?>"><?php echo $descripcionUno; ?></h3>
     </div>
     <div id="resultadoGeneral">
       <h3 class="text-dark">Resultado general:</h3>
@@ -31,8 +31,8 @@ include 'action/process.php';
             </h5>
           </div>
           <div class="col m-0 p-0">
-            <h2 class="<?echo $claseDos; ?>" id="h2Dos"><span id="porGeneral"><?php echo $promGeneral; ?></span>%</h2>
-            <h3 class="<?echo $claseDos; ?>" id="descripcionDos" style="margin-top: -8%;"><?php echo $descripcionDos; ?></h3>
+            <h2 class="<?php echo $claseDos; ?>" id="h2Dos"><span id="porGeneral"><?php echo $promGeneral; ?></span>%</h2>
+            <h3 class="<?php echo $claseDos; ?>" id="descripcionDos" style="margin-top: -8%;"><?php echo $descripcionDos; ?></h3>
           </div>
         </div>
       </div>

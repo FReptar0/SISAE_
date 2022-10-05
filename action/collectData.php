@@ -16,7 +16,8 @@ $puntajePortabilidad = $_POST['portabilidad'];
 $puntajeSeguridad = $_POST['seguridad'];
 $puntajeCompatibilidad = $_POST['compatibilidad'];
 
-if (isset($_POST['nombreEncuesta']) && isset($_POST['nombreUsuario']) && isset($_POST['nombreEmpresa']) && isset($_POST['funcionalidad']) && isset($_POST['confiabilidad']) && isset($_POST['usabilidad']) && isset($_POST['rendimiento']) && isset($_POST['mantenimiento']) && isset($_POST['portabilidad']) && isset($_POST['seguridad']) && isset($_POST['compatibilidad'])) {
+
+if (!empty($_POST['nombreEncuesta']) && !empty($_POST['nombreUsuario']) && !empty($_POST['nombreEmpresa']) && !empty($_POST['funcionalidad']) && !empty($_POST['confiabilidad']) && !empty($_POST['usabilidad']) && !empty($_POST['rendimiento']) && !empty($_POST['mantenimiento']) && !empty($_POST['portabilidad']) && !empty($_POST['seguridad']) && !empty($_POST['compatibilidad'])) {
 
     try {
 
