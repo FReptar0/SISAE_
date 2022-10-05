@@ -28,26 +28,36 @@ $promGeneral = ($sumPuntajesGenerales * 100) / ($row["RESULT"] * 40);
 
 if ($promUnitario == 100 || $promUnitario >= 80) {
     $descripcionUno = "Excelente";
+    $claseUno = "excelente";
 } elseif ($promUnitario < 80 && $promUnitario >= 60) {
     $descripcionUno = "Muy buena";
+    $claseUno = "muy-buena";
 } elseif ($promUnitario < 60 && $promUnitario >= 40) {
     $descripcionUno = "Buena";
+    $claseUno = "buena";
 } elseif ($promUnitario < 40 && $promUnitario >= 20) {
     $descripcionUno = "Regular";
+    $claseUno = "regular";
 } elseif ($promUnitario < 20 && $promUnitario >= 0) {
     $descripcionUno = "Mala";
+    $claseUno = "mala";
 }
 
 // Evaluacion de los resultados generales
 
 if ($promGeneral == 100 || $promGeneral >= 80) {
     $descripcionDos = "Excelente";
+    $claseDos = "excelente";
 } elseif ($promGeneral < 80 && $promGeneral >= 60) {
     $descripcionDos = "Muy buena";
+    $claseDos = "muy-buena";
 } elseif ($promGeneral < 60 && $promGeneral >= 40) {
     $descripcionDos = "Buena";
+    $claseDos = "buena";
 } elseif ($promGeneral < 40 && $promGeneral >= 20) {
     $descripcionDos = "Regular";
+    $claseDos = "regular";
 } elseif ($promGeneral < 20 && $promGeneral >= 0) {
     $descripcionDos = "Mala";
+    $claseDos = "mala";
 }

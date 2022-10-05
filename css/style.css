@@ -54,22 +54,27 @@ td {
 
 .mala {
   accent-color: #ff2825;
+  color: #ff2825;
 }
 
 .regular {
   accent-color: #ff9300;
+  color: #ff9300;
 }
 
 .buena {
   accent-color: #ffec00;
+  color: #ffec00;
 }
 
 .muy-buena {
   accent-color: #7bc62d;
+  color: #7bc62d;
 }
 
 .excelente {
   accent-color: #00abfb;
+  color: #00abfb;
 }
 
 .botones {
